@@ -1,1 +1,1 @@
-Paper-Rock-Scissors-Dynamite Game
+Rock-Paper-Scissor-Dynamite-Game
