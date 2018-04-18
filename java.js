@@ -4,6 +4,8 @@ var gamePieces ;
 var userInput= "";
 var computerInput = "";
 var resultsDisplay;
+var userImg= "";
+var computerImg= "";
 
 function gamePiecesInit () {
     gamePieces = ["Rock","Paper","Scissors","Dynamite"];
@@ -110,19 +112,22 @@ function whoWins() {
 
     }
 
-    if (winner == "tie")
-    {
-        resultsDisplay = "<h2>Computer Selected "+ computerInput +  "<h2>You Selected "+ userInput+"</h2>" + " <h1> It's a Tie ! </h1>";
-    }
-    else if (winner == "Computer")
-    {
-    resultsDisplay = "<h2>Computer Selected "+ computerInput + "</h2>"+  "<h2>You Selected "+ userInput+"</h2>" +" <h1> COMPUTER is the winner! </h1>";
+    userImg = userInput+".jpg";
+       computerImg = computerInput+".jpg";
 
-    }
-    else if (winner == "You"){
-        resultsDisplay = "<h2>Computer Selected "+ computerInput + "</h2>"+  "<h2>You Selected "+ userInput+"</h2>" +" <h1> YOU are the winner! </h1>";
+       if (winner == "tie")
+       {
+           resultsDisplay = "<h2>Computer Selected "+ computerInput + "</h2>"+ "<img src='./img/"+computerImg+"'>" + "<h2>You Selected "+ userInput+"</h2>" + "<img src='./img/"+userImg+"'>"+" <h1>It's a Tie !!</h1>";
+       }
+       else if (winner == "Computer")
+       {
+       resultsDisplay = "<h2>Computer Selected "+ computerInput + "</h2>"+ "<img src='./img/"+computerImg+"'>" + "<h2>You Selected "+ userInput+"</h2>" + "<img src='./img/"+userImg+"'>"+" <h1>COMPUTER is the winner :(</h1>";
 
-    }
+       }
+       else if (winner == "You"){
+           resultsDisplay = "<h2>Computer Selected "+ computerInput + "</h2>"+ "<img src='./img/"+computerImg+"'>" + "<h2>You Selected "+ userInput+"</h2>" + "<img src='./img/"+userImg+"'>"+" <h1>YOU are the winner!! :)))</h1>";
+
+       }
   }
 }
 

@@ -12,7 +12,7 @@ body{
   background-color: #ffce00;
 }
 h1{
-  color:#0375B4;
+  color:#000000;
   margin-top: 30px;
 }
 h3{
@@ -35,7 +35,7 @@ button {
 }
 #gameBoard {
     width: 90%;
-    height: 400px;
+    height: 600px;
     margin-left: 5%;
     background-color: #007849;
   }
@@ -43,5 +43,10 @@ button {
 	border: 10px solid #262228;
 	height: 70%;
 	width: 100%;
-  color: #262228;
+    color: #ffffff;
+}
+
+img {
+	width :80px;
+	height: 70px;
 }
